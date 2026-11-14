@@ -1,0 +1,12 @@
+flask>=3.0
+gunicorn>=21.2
+# PostgreSQL driver: used only when DATABASE_URL is set (production). Harmless locally.
+psycopg[binary]>=3.3
+
+# Optional, better semantic AI (then run with USE_ST=1):
+# sentence-transformers>=2.7
+
+# Optional: load settings from a local .env file
+# python-dotenv>=1.0
+
+# Optional (UI tests only): playwright>=1.45  ->  python tests/e2e_ui.py
